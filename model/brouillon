@@ -1,0 +1,5 @@
+def damage(self, damage):
+        if self.armor > 0:
+            self.armor = self.armor - 1
+            damage = 0 
+        self.health = self.health - damage
