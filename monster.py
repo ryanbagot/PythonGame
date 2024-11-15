@@ -9,12 +9,12 @@ class Monster(pygame.sprite.Sprite):
         self.game = game
         self.health = 100
         self.max_health = 100
-        self.attack = 0.3
+        self.attack = 0.03
         self.image= pygame.image.load('mummy.png')
         self.rect = self.image.get_rect()
         self.rect.x = 1000 + random.randint(0,300)
         self.rect.y = 540
-        self.velocity = random.randint(1,3)
+        self.velocity = random.uniform(0.1,0.8)
         
     def damage(self, amount):
         #infliger les dégats
